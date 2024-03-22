@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(4, 28, 51);
+    font-family: "oswald", sans-serif;
+}
+#home{
+    color: rgb(85, 162, 218);
+}
+header{
+    display: flex;
+    margin: 20px 10% 0 10%;
+}
+header h1{
+    width: 50%;
+}
+header h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+}
+nav{
+    direction: rtl;
+    width: 50%;
+    align-items: center;
+    margin-top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px; 
+    font-size: 40px;
+}
+nav a:hover{
+    color: rgb(85, 162, 218);
+}
+section{
+    margin: 0 10%;
+    display: flex;
+}
+.left{
+    margin-top: 200px;
+    width: 50%;
+}
+.left h1{
+    color:white;
+    font-size: 50px;
+}
+.left h2{
+    color: rgb(85, 162, 218);
+    font-size: 30px;
+}
+.left p{
+    color:white;
+    font-size: 25px;
+}
+.right{
+    width: 50%;
+}
+.right img{
+    margin: 80px 0 0 70px;
+    height: 500px;
+    width: 500px;
+    border-radius:82% 18% 84% 16% / 27% 81% 19% 73% ;
+    box-shadow: 0px 0px 50px red,
+                0px 0px 70px aqua,
+                0px 0px 80px aquamarine;
+}
+#main{
+    margin-top: 50px;
+}
+#main ul, #main li{
+    padding: 0;
+    margin: 0;
+}
+#main ul{
+    width: 100%;
+}
+#main li{
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    width: auto;
+    list-style: none;
+    border: 2px solid rgb(85, 162, 218);
+    background-color: rgb(4, 28, 51);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+#main a{
+    color: rgb(85, 162, 218);
+}
+#main li:hover a{
+    color: white;
+}
+#sub li{
+    width: 100%;
+    background-color: rgb(4, 28, 51);
+}
+#sub a{
+    text-decoration: none;
+}
+#sub{
+    position: absolute;
+    z-index: 1;
+    top:50px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+li:hover ul#sub{
+    opacity: 1;
+    visibility: visible;
+    top:50px;
+    transition: all 1s ease;
+}
